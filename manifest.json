@@ -2,12 +2,12 @@
 {
   "name": "JDC Radio",
   "short_name": "JDC Radio",
-  "start_url": "/",
+  "start_url": "/JDC-Radio/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#00bfff",
   "description": "La mejor compañía musical todos los días",
-  "id": "/",
+  "id": "/JDC-Radio/",
   "launch_handler": {
     "client_mode": "focus-existing"
   },
