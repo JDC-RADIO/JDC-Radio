@@ -1,7 +1,7 @@
 
-self.addEventListener('install', e => {
-    e.waitUntil(
-        caches.open('jdc-radio-cache').then(cache => {
+self.addEventListener('install', function(event) {
+    event.waitUntil(
+        caches.open('jdc-radio-v1').then(function(cache) {
             return cache.addAll([
                 '/',
                 '/index.html',
@@ -11,10 +11,11 @@ self.addEventListener('install', e => {
         })
     );
 });
-self.addEventListener('fetch', e => {
-    e.respondWith(
-        caches.match(e.request).then(response => {
-            return response || fetch(e.request);
+
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request).then(function(response) {
+            return response || fetch(event.request);
         })
     );
 });

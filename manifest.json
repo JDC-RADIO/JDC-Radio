@@ -2,14 +2,19 @@
 {
   "name": "JDC Radio",
   "short_name": "JDC Radio",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#00bfff",
+  "description": "La mejor compañía musical todos los días",
+  "id": "/",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
   "icons": [
     {
-      "src": "assets/logo.png",
-      "sizes": "192x192",
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
